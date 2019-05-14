@@ -60,6 +60,7 @@ const Room = ({ color, number, right, opposite }) => {
 								alignItems: 'center',
 								width: 20,
 								height: 20,
+								transform: rotate(${right ? '-' : ''}90deg);
 								color: number === terminal ? highlightContrast : contrast,
 								backgroundColor: number === terminal ? contrast : null,
 							}}
