@@ -61,7 +61,7 @@ const Room = ({ color, number, right, locked }) => {
 								alignItems: 'center',
 								width: 20,
 								height: 20,
-								transform: right ? 'rotate(90deg)' : 'rotate(-90deg)',
+								transform: `translate(${right ? '' : '-'}90deg)`,
 								color:
 									locked[`${color}-${terminal}`] != null
 										? color
